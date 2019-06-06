@@ -16,8 +16,8 @@ It is very important to know how the basic sorting algorithms used in developmen
 
 A comparative table of sorting algorithms [does not belong to me](https://medium.com/@george.seif94/a-tour-of-the-top-5-sorting-algorithms-with-python-code-43ea9aa02889), but it clearly shows the complexity of each of the algorithms (some are not presented), which is the main factor that influences the speed of the algorithm.
 
-<p>
-  <img align="center" width="580" height="450" alt="Sorting_Algorithms" title="A comparative study between various sorting algorithms" src="https://github.com/SValentyn/Sorting-algorithms/blob/master/sorting_algorithms.png">
+<p align="center">
+  <img  width="580" height="450" alt="Sorting_Algorithms" title="A comparative study between various sorting algorithms" src="https://github.com/SValentyn/Sorting-algorithms/blob/master/sorting_algorithms.png">
 </p>
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com)
