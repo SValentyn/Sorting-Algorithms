@@ -1,6 +1,13 @@
 import java.util.Scanner;
 
+/**
+ * The main class of the application. Contains a menu with a choice of the necessary sorting.
+ * Sorting will be performed on an array of integers.
+ *
+ * @author Syniuk Valentyn
+ */
 public class SortsMain {
+    
     public static void main(String[] args) {
 
         int time;
@@ -10,120 +17,110 @@ public class SortsMain {
         Scanner in = new Scanner(System.in);
         Sorts sorts = new Sorts(array);
 
-        System.out.print("\n<<< Массив до сортировки: ");
+        System.out.print("\n<<< Array before sorting: ");
         for (int i = 0; i < 20; i++) {
             array[i] = (int) (Math.random() * 10);
             System.out.print(array[i] + ", ");
         }
 
-        System.out.println("\n\n<<< Сортировка массива >>>");
-        System.out.println("1. Сортировка \"Пузырьком\"\n" +
-                "2. Сортировка \"Выбором\"\n" +
-                "3. Сортировка \"Вставками\"\n" +
-                "4. Сортировка \"Расчёска\"\n" +
-                "5. Сортировка \"Шелла\"\n" +
-                "6. Сортировка \"Stooge\"\n" +
-                "7. Сортировка \"Quick\"\n" +
-                "8. Сортировка \"Shaker\"\n" +
-                "9. Сортировка \"Gnome\"\n" +
-                "10. Выход\n");
+        System.out.println("\n\n<<< Selection menu of the sorting >>>");
+        System.out.println("1. Sorting \"Bubble\"\n" +
+                "2. Sorting \"Selection\"\n" +
+                "3. Sorting \"Insertion\"\n" +
+                "4. Sorting \"Comb\"\n" +
+                "5. Sorting \"Shell\"\n" +
+                "6. Sorting \"Stooge\"\n" +
+                "7. Sorting \"Quick\"\n" +
+                "8. Sorting \"Shaker\"\n" +
+                "9. Sorting \"Gnome\"\n" +
+                "10. Exit\n");
 
-
-        System.out.print(">>> Выберите пункт: ");
-        choice = in.nextInt();
-
-        switch (choice) {
+        System.out.print(">>> Select item: ");
+        switch (in.nextInt()) {
 
             case 1: {
-                System.out.println("Выбрали – сортировку \"Пузырьком\"!");
                 time = (int) System.currentTimeMillis();
                 sorts.bubble();
                 time = (int) (System.currentTimeMillis() - time);
-                System.out.println("\n<<< Время выполнения: " + time + " millisec.");
+                System.out.println("\n<<< Lead time: " + time + " millisec.");
                 break;
             }
 
             case 2: {
-                System.out.println("Выбрали – сортировку \"Выбором\"!");
                 time = (int) System.currentTimeMillis();
                 sorts.selection();
                 time = (int) (System.currentTimeMillis() - time);
-                System.out.println("\n<<< Время выполнения: " + time + " millisec.");
+                System.out.println("\n<<< Lead time: " + time + " millisec.");
                 break;
             }
 
             case 3: {
-                System.out.println("Выбрали – сортировку \"Вставками\"!");
                 time = (int) System.currentTimeMillis();
                 sorts.insertion();
                 time = (int) (System.currentTimeMillis() - time);
-                System.out.println("\n<<< Время выполнения: " + time + " millisec.");
+                System.out.println("\n<<< Lead time: " + time + " millisec.");
                 break;
             }
 
             case 4: {
-                System.out.println("Выбрали – сортировку \"Расчёска\"!");
                 time = (int) System.currentTimeMillis();
                 sorts.comb();
                 time = (int) (System.currentTimeMillis() - time);
-                System.out.println("\n<<< Время выполнения: " + time + " millisec.");
+                System.out.println("\n<<< Lead time: " + time + " millisec.");
                 break;
             }
 
             case 5: {
-                System.out.println("Выбрали – сортировку \"Шелла\"!");
                 time = (int) System.currentTimeMillis();
                 sorts.shell();
                 time = (int) (System.currentTimeMillis() - time);
-                System.out.println("\n<<< Время выполнения: " + time + " millisec.");
+                System.out.println("\n<<< Lead time: " + time + " millisec.");
                 break;
             }
 
             case 6: {
-                System.out.println("Выбрали – сортировку \"Stooge\"!");
                 time = (int) System.currentTimeMillis();
                 sorts.stooge(0, array.length - 1);
                 time = (int) (System.currentTimeMillis() - time);
-                System.out.println("\n<<< Время выполнения: " + time + " millisec.");
+                System.out.println("\n<<< Lead time: " + time + " millisec.");
                 break;
             }
 
             case 7: {
-                System.out.println("Выбрали – сортировку \"Quick\"!");
                 time = (int) System.currentTimeMillis();
                 sorts.quick(0, array.length - 1);
                 time = (int) (System.currentTimeMillis() - time);
-                System.out.println("\n<<< Время выполнения: " + time + " millisec.");
+                System.out.println("\n<<< Lead time: " + time + " millisec.");
                 break;
             }
 
             case 8: {
-                System.out.println("Выбрали – сортировку \"Shaker\"!");
                 time = (int) System.currentTimeMillis();
                 sorts.shaker();
                 time = (int) (System.currentTimeMillis() - time);
-                System.out.println("\n<<< Время выполнения: " + time + " millisec.");
+                System.out.println("\n<<< Lead time: " + time + " millisec.");
                 break;
             }
 
             case 9: {
-                System.out.println("Выбрали – сортировку \"Gnome\"!");
                 time = (int) System.currentTimeMillis();
                 sorts.gnome();
                 time = (int) (System.currentTimeMillis() - time);
-                System.out.println("\n<<< Время выполнения: " + time + " millisec.");
+                System.out.println("\n<<< Lead time: " + time + " millisec.");
                 break;
             }
 
-            case 10:
+            case 10: {
+                System.exit(0);
                 break;
+            }
 
             default:
-                System.out.println("Неверный ввод!");
+                System.out.println("Invalid input!");
         }
 
         array = sorts.getArray();
-        System.out.print("<<< Массив после сортировки: ");
+        System.out.print("<<< Array after sorting: ");
         for (int i = 0; i < 20; i++)
             System.out.print(array[i] + ", ");
     }
