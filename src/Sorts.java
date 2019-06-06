@@ -1,5 +1,5 @@
 /**
- * Класс реализации многих алгоритмов сортировок.
+ * The implementation class of many sorting algorithms.
  *
  * @author Syniuk Valentyn
  */
