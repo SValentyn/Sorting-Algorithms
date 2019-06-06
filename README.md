@@ -14,10 +14,10 @@ It is very important to know how the basic sorting algorithms used in developmen
   8. Sorting "Shaker"
   9. Sorting "Gnome"
 
-The comparison table of sorting algorithms [does not belong to me](https://www.researchgate.net/figure/Summary-of-the-best-case-average-case-and-worst-case2_tbl1_274640372), but it clearly shows the leaders in speed.
+A comparative table of sorting algorithms [does not belong to me](https://medium.com/@george.seif94/a-tour-of-the-top-5-sorting-algorithms-with-python-code-43ea9aa02889), but it clearly shows the complexity of each of the algorithms (some are not presented), which is the main factor that influences the speed of the algorithm.
 
 <p>
-  <a href="https://medium.com/@george.seif94/a-tour-of-the-top-5-sorting-algorithms-with-python-code-43ea9aa02889"><img align="center" width="400" height="400" alt="Sorting_Algorithms" title="A Comparative Study between Various Sorting Algorithms" src="https://github.com/SValentyn/Sorting-algorithms/blob/master/sorting_algorithms.png"></a>
+  <img align="center" width="580" height="450" alt="Sorting_Algorithms" title="A comparative study between various sorting algorithms" src="https://github.com/SValentyn/Sorting-algorithms/blob/master/sorting_algorithms.png">
 </p>
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com)
